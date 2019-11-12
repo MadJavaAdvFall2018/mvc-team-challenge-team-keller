@@ -19,15 +19,17 @@ public class Controller extends HttpServlet {
      *@exception  ServletException  if there is a Servlet failure
      *@exception  IOException       if there is an IO failure
      */
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String english = request.getParameter("text");
+        if (request.getParameter("text") != null) {
+            String english = request.getParameter("text");
 
-        PigLatin PigLatin = new PigLatin();
+            PigLatin PigLatin = new PigLatin();
 
-        PigLatin.setTranslation(english);
+            PigLatin.setTranslation(english);
 
-        request.setAttribute("pigLatin", PigLatin);
+            request.setAttribute("pigLatin", PigLatin);
+        }
 
         String url = "/index.jsp";
 

@@ -8,7 +8,7 @@
 
     <h1>Igpay Atinlay</h1>
 
-    <form method="post">
+    <form method="get" action="/java112/pigLatin">
         <label>Text to be translated:</label><br>
         <textarea name="text">
         </textarea><br>
