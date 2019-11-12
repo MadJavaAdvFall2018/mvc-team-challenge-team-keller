@@ -10,8 +10,7 @@
 
     <form method="get" action="/java112/pigLatin">
         <label>Text to be translated:</label><br>
-        <textarea name="text">
-        </textarea><br>
+        <textarea name="text"></textarea><br>
         <input type="submit" value="Submit">
     </form>
 
