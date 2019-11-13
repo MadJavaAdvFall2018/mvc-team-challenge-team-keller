@@ -16,6 +16,7 @@
 
         <h2>Translated result:</h2>
         <p>${pigLatin.translation}</p>
+        <a href="/java112/diagram.jsp">diagram</a>
     </div>
 </body>
 </html>
