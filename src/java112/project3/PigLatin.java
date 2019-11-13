@@ -5,6 +5,7 @@ import java.util.*;
 public class PigLatin {
 
     private String translation;
+    private String english;
     private List<String> vowels = new ArrayList<String>();
 
     public PigLatin() {
